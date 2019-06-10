@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "inputs#index"
   # Routes for the Note resource:
 
   # CREATE
