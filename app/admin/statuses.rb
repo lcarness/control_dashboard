@@ -1,4 +1,6 @@
 ActiveAdmin.register Status do
+
+ permit_params :area_of_interest, :status, :action_plan
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
