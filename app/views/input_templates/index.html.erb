@@ -10,17 +10,13 @@
   </div>
 </div>
 
-<!-- Ransack Code start -->
 <div class="row">
   <div class="col-md-12 mb-3">
     <%= render partial: "input_templates/inputs_search_form" %>
   </div>
 </div>
-<!-- Ransack Code end -->
 
-<!-- Location Map Code start -->
 
-<!-- Location Map Code end -->
 
 <hr>
 
@@ -182,211 +178,142 @@
 
       <% @inputs.each do |input| %>
       <tr>
-        <!-- Display input.id start -->
         <td>
           <%= input.id %>
         </td>
-        <!-- Display input.id end -->
 
-        <!-- Display input.operating_income start -->
         <td>
           <%= input.operating_income %>
         </td>
-        <!-- Display input.operating_income end -->
 
-        <!-- Display input.revenues start -->
         <td>
           <%= input.revenues %>
         </td>
-        <!-- Display input.revenues end -->
 
-        <!-- Display input.invested_capital start -->
         <td>
           <%= input.invested_capital %>
         </td>
-        <!-- Display input.invested_capital end -->
 
-        <!-- Display input.total_assets start -->
         <td>
           <%= input.total_assets %>
         </td>
-        <!-- Display input.total_assets end -->
 
-        <!-- Display input.paid_in_capital start -->
         <td>
           <%= input.paid_in_capital %>
         </td>
-        <!-- Display input.paid_in_capital end -->
 
-        <!-- Display input.non_performing_loans_to_customers start -->
         <td>
           <%= input.non_performing_loans_to_customers %>
         </td>
-        <!-- Display input.non_performing_loans_to_customers end -->
 
-        <!-- Display input.long_term_debt start -->
         <td>
           <%= input.long_term_debt %>
         </td>
-        <!-- Display input.long_term_debt end -->
 
-        <!-- Display input.perished_inventory start -->
         <td>
           <%= input.perished_inventory %>
         </td>
-        <!-- Display input.perished_inventory end -->
 
-        <!-- Display input.customer_satisfaction start -->
         <td>
           <%= input.customer_satisfaction %>
         </td>
-        <!-- Display input.customer_satisfaction end -->
 
-        <!-- Display input.customers_acquired_last_month start -->
         <td>
           <%= input.customers_acquired_last_month %>
         </td>
-        <!-- Display input.customers_acquired_last_month end -->
 
-        <!-- Display input.total_customers start -->
         <td>
           <%= input.total_customers %>
         </td>
-        <!-- Display input.total_customers end -->
 
-        <!-- Display input.number_promotion_activities_last_month start -->
         <td>
           <%= input.number_promotion_activities_last_month %>
         </td>
-        <!-- Display input.number_promotion_activities_last_month end -->
 
-        <!-- Display input.number_promotion_activities_next_month start -->
         <td>
           <%= input.number_promotion_activities_next_month %>
         </td>
-        <!-- Display input.number_promotion_activities_next_month end -->
 
-        <!-- Display input.utilities_expenses start -->
         <td>
           <%= input.utilities_expenses %>
         </td>
-        <!-- Display input.utilities_expenses end -->
 
-        <!-- Display input.rent start -->
         <td>
           <%= input.rent %>
         </td>
-        <!-- Display input.rent end -->
 
-        <!-- Display input.interest_expenses start -->
         <td>
           <%= input.interest_expenses %>
         </td>
-        <!-- Display input.interest_expenses end -->
 
-        <!-- Display input.taxes start -->
         <td>
           <%= input.taxes %>
         </td>
-        <!-- Display input.taxes end -->
 
-        <!-- Display input.consulting_expenses start -->
         <td>
           <%= input.consulting_expenses %>
         </td>
-        <!-- Display input.consulting_expenses end -->
 
-        <!-- Display input.other_indirect_costs start -->
         <td>
           <%= input.other_indirect_costs %>
         </td>
-        <!-- Display input.other_indirect_costs end -->
 
-        <!-- Display input.number_of_employees start -->
         <td>
           <%= input.number_of_employees %>
         </td>
-        <!-- Display input.number_of_employees end -->
 
-        <!-- Display input.yearly_working_days start -->
         <td>
           <%= input.yearly_working_days %>
         </td>
-        <!-- Display input.yearly_working_days end -->
 
-        <!-- Display input.monthly_contribution_margin start -->
         <td>
           <%= input.monthly_contribution_margin %>
         </td>
-        <!-- Display input.monthly_contribution_margin end -->
 
-        <!-- Display input.last_month_deferred_revenues start -->
         <td>
           <%= input.last_month_deferred_revenues %>
         </td>
-        <!-- Display input.last_month_deferred_revenues end -->
 
-        <!-- Display input.last_month_total_revenues start -->
         <td>
           <%= input.last_month_total_revenues %>
         </td>
-        <!-- Display input.last_month_total_revenues end -->
 
-        <!-- Display input.total_deliveries start -->
         <td>
           <%= input.total_deliveries %>
         </td>
-        <!-- Display input.total_deliveries end -->
 
-        <!-- Display input.late_deliveries start -->
         <td>
           <%= input.late_deliveries %>
         </td>
-        <!-- Display input.late_deliveries end -->
 
-        <!-- Display input.non_compliant_deliveries start -->
         <td>
           <%= input.non_compliant_deliveries %>
         </td>
-        <!-- Display input.non_compliant_deliveries end -->
 
-        <!-- Display input.monthly_employee_suggestions_received start -->
         <td>
           <%= input.monthly_employee_suggestions_received %>
         </td>
-        <!-- Display input.monthly_employee_suggestions_received end -->
 
-        <!-- Display input.monthly_revenues_new_products start -->
         <td>
           <%= input.monthly_revenues_new_products %>
         </td>
-        <!-- Display input.monthly_revenues_new_products end -->
 
-        <!-- Display input.monthly_education_hours_manager start -->
         <td>
           <%= input.monthly_education_hours_manager %>
         </td>
-        <!-- Display input.monthly_education_hours_manager end -->
 
-        <!-- Display input.monthly_education_hours_all_employees start -->
         <td>
           <%= input.monthly_education_hours_all_employees %>
         </td>
-        <!-- Display input.monthly_education_hours_all_employees end -->
 
-        <!-- Display input.reference_period start -->
         <td>
           <%= input.reference_period %>
         </td>
-        <!-- Display input.reference_period end -->
 
-        <!-- Display input.date_of_entry start -->
         <td>
           <%= input.date_of_entry %>
         </td>
-        <!-- Display input.date_of_entry end -->
 
-        <!-- Display input.user_id start -->
         <td>
           <% if input.user.present? %>
             <a href="/users/<%= input.user.id %>">
@@ -394,19 +321,14 @@
             </a>
           <% end %>
         </td>
-        <!-- Display input.user_id end -->
 
-        <!-- Display input.created_at start -->
         <td>
           <%= time_ago_in_words(input.created_at) %> ago
         </td>
-        <!-- Display input.created_at end -->
 
-        <!-- Display input.updated_at start -->
         <td>
           <%= time_ago_in_words(input.updated_at) %> ago
         </td>
-        <!-- Display input.updated_at end -->
 
         <td>
           <a href="/inputs/<%= input.id %>">

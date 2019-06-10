@@ -7,9 +7,7 @@
 
       <div class="card-body">
         <% was_validated = resource.errors.any? %>
-        <!-- Form html options start -->
         <% form_html_options = { novalidate: true, class: "mb-3" } %>
-        <!-- Form html options end -->
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: form_html_options) do |f| %>
 
           <div class="form-group">
@@ -91,7 +89,6 @@
           </div>
 
           
-          <!-- Devise Input for first_name start -->
           <div class="form-group">
             <% first_name_was_invalid = resource.errors.include?(:first_name) %>
 
@@ -117,9 +114,7 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for first_name end -->
           
-          <!-- Devise Input for last_name start -->
           <div class="form-group">
             <% last_name_was_invalid = resource.errors.include?(:last_name) %>
 
@@ -145,9 +140,7 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for last_name end -->
           
-          <!-- Devise Input for address start -->
           <div class="form-group">
             <% address_was_invalid = resource.errors.include?(:address) %>
 
@@ -173,9 +166,7 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for address end -->
           
-          <!-- Devise Input for industry start -->
           <div class="form-group">
             <% industry_was_invalid = resource.errors.include?(:industry) %>
 
@@ -201,9 +192,7 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for industry end -->
           
-          <!-- Devise Input for year_of_incorporation start -->
           <div class="form-group">
             <% year_of_incorporation_was_invalid = resource.errors.include?(:year_of_incorporation) %>
 
@@ -229,9 +218,7 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for year_of_incorporation end -->
           
-          <!-- Devise Input for number_of_employees start -->
           <div class="form-group">
             <% number_of_employees_was_invalid = resource.errors.include?(:number_of_employees) %>
 
@@ -257,7 +244,6 @@
               <% end %>
             <% end %>
           </div>
-          <!-- Devise Input for number_of_employees end -->
           <%= f.button class: "btn btn-outline-primary btn-block" %>
 
           <hr>

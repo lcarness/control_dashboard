@@ -1,23 +1,14 @@
-<!-- Form note start -->
 <form action="/create_note_from_input" method="post">
-<!-- Form note end -->
 
-  <!-- Label and input for notes start -->
   <div class="form-group">
     <label for="notes">
       Notes
     </label>
 
-    <!-- Input for notes start -->
     <input type="text" id="notes" name="notes" class="form-control" value="<%= @note.notes %>">
-    <!-- Input for notes end -->
   </div>
-  <!-- Label and input for notes end -->
 
-  <!-- Label and input for inputs_id start -->
-  <!-- Input for inputs_id start -->
   <input type="hidden" name="inputs_id" value="<%= @input.id %>">
-  <!-- Input for inputs_id end -->
 
   <button class="btn btn-block btn-outline-secondary">
     Create note

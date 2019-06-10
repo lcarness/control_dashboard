@@ -11,71 +11,55 @@
         </a>
       </div>
 
-      <!-- Edit link status start -->
       <div class="col">
         <a href="/statuses/<%= @status.id %>/edit" class="btn btn-block btn-outline-secondary">
           Edit status
         </a>
       </div>
-      <!-- Edit link status end -->
 
-      <!-- Delete link status start -->
       <div class="col">
         <a href="/delete_status/<%= @status.id %>" class="btn btn-block btn-outline-secondary">
           Delete status
         </a>
       </div>
-      <!-- Delete link status end -->
     </div>
 
     <dl>
       <dt>
         Area of interest
       </dt>
-      <!-- Display area_of_interest start -->
       <dd>
         <%= @status.area_of_interest %>
       </dd>
-      <!-- Display area_of_interest end -->
 
       <dt>
         Status
       </dt>
-      <!-- Display status start -->
       <dd>
         <%= @status.status %>
       </dd>
-      <!-- Display status end -->
 
       <dt>
         Action plan
       </dt>
-      <!-- Display action_plan start -->
       <dd>
         <%= @status.action_plan %>
       </dd>
-      <!-- Display action_plan end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@status.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@status.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
-<!-- Show Page Customization end -->

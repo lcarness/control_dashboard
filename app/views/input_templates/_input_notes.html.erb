@@ -10,26 +10,20 @@
   <ul class="list-group list-group-flush">
     <% @input.notes.each do |note| %>
       <li class="list-group-item d-flex align-items-center justify-content-between">
-        <!-- Show link start -->
         <a href="/notes/<%= note.id %>">
           <%= note.notes %>
         </a>
-        <!-- Show link end -->
 
-        <!-- Delete link start -->
         <a href="/delete_note_from_inputs/<%= note.id %>">
           Delete
         </a>
-        <!-- Delete link end -->
 
       </li>
     <% end %>
 
     <div class="card-footer">
       <div class="collapse" id="input_notes_new_form">
-        <!-- New associationcollection form start -->
         <%= render partial: "input_templates/input_notes_new_form" %>
-        <!-- New associationcollection form end -->
       </div>
     </div>
 

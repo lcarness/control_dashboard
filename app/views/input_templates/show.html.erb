@@ -11,7 +11,6 @@
         </a>
       </div>
 
-      <!-- Edit link input start -->
       <div class="col">
         <% if current_user == @input.user %>
           <a href="/inputs/<%= @input.id %>/edit" class="btn btn-block btn-sm btn-outline-secondary">
@@ -19,9 +18,7 @@
           </a>
         <% end %>
       </div>
-      <!-- Edit link input end -->
 
-      <!-- Delete link input start -->
       <div class="col">
         <% if current_user == @input.user %>
           <a href="/delete_input/<%= @input.id %>" class="btn btn-block btn-sm btn-outline-secondary">
@@ -29,311 +26,243 @@
           </a>
         <% end %>
       </div>
-      <!-- Delete link input end -->
     </div>
 
     <dl>
       <dt>
         Operating income
       </dt>
-      <!-- Display operating_income start -->
       <dd>
         <%= @input.operating_income %>
       </dd>
-      <!-- Display operating_income end -->
 
       <dt>
         Revenues
       </dt>
-      <!-- Display revenues start -->
       <dd>
         <%= @input.revenues %>
       </dd>
-      <!-- Display revenues end -->
 
       <dt>
         Invested capital
       </dt>
-      <!-- Display invested_capital start -->
       <dd>
         <%= @input.invested_capital %>
       </dd>
-      <!-- Display invested_capital end -->
 
       <dt>
         Total assets
       </dt>
-      <!-- Display total_assets start -->
       <dd>
         <%= @input.total_assets %>
       </dd>
-      <!-- Display total_assets end -->
 
       <dt>
         Paid in capital
       </dt>
-      <!-- Display paid_in_capital start -->
       <dd>
         <%= @input.paid_in_capital %>
       </dd>
-      <!-- Display paid_in_capital end -->
 
       <dt>
         Non performing loans to customers
       </dt>
-      <!-- Display non_performing_loans_to_customers start -->
       <dd>
         <%= @input.non_performing_loans_to_customers %>
       </dd>
-      <!-- Display non_performing_loans_to_customers end -->
 
       <dt>
         Long term debt
       </dt>
-      <!-- Display long_term_debt start -->
       <dd>
         <%= @input.long_term_debt %>
       </dd>
-      <!-- Display long_term_debt end -->
 
       <dt>
         Perished inventory
       </dt>
-      <!-- Display perished_inventory start -->
       <dd>
         <%= @input.perished_inventory %>
       </dd>
-      <!-- Display perished_inventory end -->
 
       <dt>
         Customer satisfaction
       </dt>
-      <!-- Display customer_satisfaction start -->
       <dd>
         <%= @input.customer_satisfaction %>
       </dd>
-      <!-- Display customer_satisfaction end -->
 
       <dt>
         Customers acquired last month
       </dt>
-      <!-- Display customers_acquired_last_month start -->
       <dd>
         <%= @input.customers_acquired_last_month %>
       </dd>
-      <!-- Display customers_acquired_last_month end -->
 
       <dt>
         Total customers
       </dt>
-      <!-- Display total_customers start -->
       <dd>
         <%= @input.total_customers %>
       </dd>
-      <!-- Display total_customers end -->
 
       <dt>
         Number promotion activities last month
       </dt>
-      <!-- Display number_promotion_activities_last_month start -->
       <dd>
         <%= @input.number_promotion_activities_last_month %>
       </dd>
-      <!-- Display number_promotion_activities_last_month end -->
 
       <dt>
         Number promotion activities next month
       </dt>
-      <!-- Display number_promotion_activities_next_month start -->
       <dd>
         <%= @input.number_promotion_activities_next_month %>
       </dd>
-      <!-- Display number_promotion_activities_next_month end -->
 
       <dt>
         Utilities expenses
       </dt>
-      <!-- Display utilities_expenses start -->
       <dd>
         <%= @input.utilities_expenses %>
       </dd>
-      <!-- Display utilities_expenses end -->
 
       <dt>
         Rent
       </dt>
-      <!-- Display rent start -->
       <dd>
         <%= @input.rent %>
       </dd>
-      <!-- Display rent end -->
 
       <dt>
         Interest expenses
       </dt>
-      <!-- Display interest_expenses start -->
       <dd>
         <%= @input.interest_expenses %>
       </dd>
-      <!-- Display interest_expenses end -->
 
       <dt>
         Taxes
       </dt>
-      <!-- Display taxes start -->
       <dd>
         <%= @input.taxes %>
       </dd>
-      <!-- Display taxes end -->
 
       <dt>
         Consulting expenses
       </dt>
-      <!-- Display consulting_expenses start -->
       <dd>
         <%= @input.consulting_expenses %>
       </dd>
-      <!-- Display consulting_expenses end -->
 
       <dt>
         Other indirect costs
       </dt>
-      <!-- Display other_indirect_costs start -->
       <dd>
         <%= @input.other_indirect_costs %>
       </dd>
-      <!-- Display other_indirect_costs end -->
 
       <dt>
         Number of employees
       </dt>
-      <!-- Display number_of_employees start -->
       <dd>
         <%= @input.number_of_employees %>
       </dd>
-      <!-- Display number_of_employees end -->
 
       <dt>
         Yearly working days
       </dt>
-      <!-- Display yearly_working_days start -->
       <dd>
         <%= @input.yearly_working_days %>
       </dd>
-      <!-- Display yearly_working_days end -->
 
       <dt>
         Monthly contribution margin
       </dt>
-      <!-- Display monthly_contribution_margin start -->
       <dd>
         <%= @input.monthly_contribution_margin %>
       </dd>
-      <!-- Display monthly_contribution_margin end -->
 
       <dt>
         Last month deferred revenues
       </dt>
-      <!-- Display last_month_deferred_revenues start -->
       <dd>
         <%= @input.last_month_deferred_revenues %>
       </dd>
-      <!-- Display last_month_deferred_revenues end -->
 
       <dt>
         Last month total revenues
       </dt>
-      <!-- Display last_month_total_revenues start -->
       <dd>
         <%= @input.last_month_total_revenues %>
       </dd>
-      <!-- Display last_month_total_revenues end -->
 
       <dt>
         Total deliveries
       </dt>
-      <!-- Display total_deliveries start -->
       <dd>
         <%= @input.total_deliveries %>
       </dd>
-      <!-- Display total_deliveries end -->
 
       <dt>
         Late deliveries
       </dt>
-      <!-- Display late_deliveries start -->
       <dd>
         <%= @input.late_deliveries %>
       </dd>
-      <!-- Display late_deliveries end -->
 
       <dt>
         Non compliant deliveries
       </dt>
-      <!-- Display non_compliant_deliveries start -->
       <dd>
         <%= @input.non_compliant_deliveries %>
       </dd>
-      <!-- Display non_compliant_deliveries end -->
 
       <dt>
         Monthly employee suggestions received
       </dt>
-      <!-- Display monthly_employee_suggestions_received start -->
       <dd>
         <%= @input.monthly_employee_suggestions_received %>
       </dd>
-      <!-- Display monthly_employee_suggestions_received end -->
 
       <dt>
         Monthly revenues new products
       </dt>
-      <!-- Display monthly_revenues_new_products start -->
       <dd>
         <%= @input.monthly_revenues_new_products %>
       </dd>
-      <!-- Display monthly_revenues_new_products end -->
 
       <dt>
         Monthly education hours manager
       </dt>
-      <!-- Display monthly_education_hours_manager start -->
       <dd>
         <%= @input.monthly_education_hours_manager %>
       </dd>
-      <!-- Display monthly_education_hours_manager end -->
 
       <dt>
         Monthly education hours all employees
       </dt>
-      <!-- Display monthly_education_hours_all_employees start -->
       <dd>
         <%= @input.monthly_education_hours_all_employees %>
       </dd>
-      <!-- Display monthly_education_hours_all_employees end -->
 
       <dt>
         Reference period
       </dt>
-      <!-- Display reference_period start -->
       <dd>
         <%= @input.reference_period %>
       </dd>
-      <!-- Display reference_period end -->
 
       <dt>
         Date of entry
       </dt>
-      <!-- Display date_of_entry start -->
       <dd>
         <%= @input.date_of_entry %>
       </dd>
-      <!-- Display date_of_entry end -->
 
       <dt>
         User
       </dt>
-      <!-- Display user_id start -->
       <dd>
         <% if @input.user.present? %>
           <a href="/users/<%= @input.user_id %>">
@@ -341,33 +270,26 @@
           </a>
         <% end %>
       </dd>
-      <!-- Display user_id end -->
 
       <dt>
         Created at
       </dt>
-      <!-- Display created_at start -->
       <dd>
         <%= time_ago_in_words(@input.created_at) %> ago
       </dd>
-      <!-- Display created_at end -->
 
       <dt>
         Updated at
       </dt>
-      <!-- Display updated_at start -->
       <dd>
         <%= time_ago_in_words(@input.updated_at) %> ago
       </dd>
-      <!-- Display updated_at end -->
     </dl>
   </div>
 </div>
 
-<!-- Show Page Customization starts -->
 <div class="row mb-3">
   <div class="col-md-8 offset-md-2">
     <%= render partial: "input_templates/input_notes" %>
   </div>
 </div>
-<!-- Show Page Customization end -->
