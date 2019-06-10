@@ -107,7 +107,7 @@ class InputsController < ApplicationController
     @input.monthly_education_hours_all_employees = params.fetch("monthly_education_hours_all_employees")
     @input.reference_period = params.fetch("reference_period")
     @input.date_of_entry = params.fetch("date_of_entry")
-    @input.user_id = params.fetch("user_id")
+    
 
     if @input.valid?
       @input.save
