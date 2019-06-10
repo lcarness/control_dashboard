@@ -10,7 +10,8 @@ class InputsController < ApplicationController
   end
 
   def index
-    @inputs = current_user.inputs.page(params[:page]).per(10)
+    @q = current_user.inputs.ransack(params[:q])
+    @inputs = @q.result(:distinct => true).includes(:user, :notes).page(params[:page]).per(10)
 
     render("input_templates/index.html.erb")
   end
