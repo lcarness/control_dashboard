@@ -1,0 +1,57 @@
+<h1>
+  Add a new status
+</h1>
+
+
+<hr>
+
+<!-- Form status start -->
+<form action="/create_status" method="post">
+<!-- Form status end -->
+
+  <!-- Label and input for area_of_interest start -->
+  <div class="form-group">
+    <label for="area_of_interest">
+      Area of interest
+    </label>
+
+    <!-- Input for area_of_interest start -->
+    <input type="text" id="area_of_interest" name="area_of_interest" class="form-control">
+    <!-- Input for area_of_interest end -->
+  </div>
+  <!-- Label and input for area_of_interest end -->
+
+  <!-- Label and input for status start -->
+  <div class="form-group">
+    <label for="status">
+      Status
+    </label>
+
+    <!-- Input for status start -->
+    <textarea id="status" name="status" class="form-control" rows="3"></textarea>
+    <!-- Input for status end -->
+  </div>
+  <!-- Label and input for status end -->
+
+  <!-- Label and input for action_plan start -->
+  <div class="form-group">
+    <label for="action_plan">
+      Action plan
+    </label>
+
+    <!-- Input for action_plan start -->
+    <textarea id="action_plan" name="action_plan" class="form-control" rows="3"></textarea>
+    <!-- Input for action_plan end -->
+  </div>
+  <!-- Label and input for action_plan end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Create status
+  </button>
+</form>
+
+<hr>
+
+<a href="/statuses">
+  Go back
+</a>
