@@ -1,0 +1,23 @@
+<div class="card">
+  <div class="card-header d-flex align-items-center justify-content-between">
+    Inputs
+
+    <a data-toggle="collapse" href="#user_inputs_new_form">
+      Add input
+    </a>
+  </div>
+
+  <ul class="list-group list-group-flush">
+    <% @user.inputs.each do |input| %>
+      <li class="list-group-item d-flex align-items-center justify-content-between">
+        <!-- Show link start -->
+        <a href="/inputs/<%= input.id %>">
+          <%= input.operating_income %>
+        </a>
+        <!-- Show link end -->
+
+      </li>
+    <% end %>
+
+  </ul>
+</div>

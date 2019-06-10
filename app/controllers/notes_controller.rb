@@ -53,6 +53,14 @@ class NotesController < ApplicationController
     end
   end
 
+  def destroy_row_from_inputs
+    @note = Note.find(params.fetch("id_to_remove"))
+
+    @note.destroy
+
+    redirect_to("/inputs/#{@note.inputs_id}", notice: "Note deleted successfully.")
+  end
+
   def destroy_row
     @note = Note.find(params.fetch("id_to_remove"))
 

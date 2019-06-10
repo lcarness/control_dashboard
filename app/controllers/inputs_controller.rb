@@ -117,6 +117,14 @@ class InputsController < ApplicationController
     end
   end
 
+  def destroy_row_from_user
+    @input = Input.find(params.fetch("id_to_remove"))
+
+    @input.destroy
+
+    redirect_to("/users/#{@input.user_id}", notice: "Input deleted successfully.")
+  end
+
   def destroy_row
     @input = Input.find(params.fetch("id_to_remove"))
 
