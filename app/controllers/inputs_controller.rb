@@ -6,6 +6,7 @@ class InputsController < ApplicationController
   end
 
   def show
+    @note = Note.new
     @input = Input.find(params.fetch("id_to_display"))
 
     render("input_templates/show.html.erb")

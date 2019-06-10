@@ -32,6 +32,21 @@ class NotesController < ApplicationController
     end
   end
 
+  def create_row_from_input
+    @note = Note.new
+
+    @note.notes = params.fetch("notes")
+    @note.inputs_id = params.fetch("inputs_id")
+
+    if @note.valid?
+      @note.save
+
+      redirect_to("/inputs/#{@note.inputs_id}", notice: "Note created successfully.")
+    else
+      render("note_templates/new_form_with_errors.html.erb")
+    end
+  end
+
   def edit_form
     @note = Note.find(params.fetch("prefill_with_id"))
 
