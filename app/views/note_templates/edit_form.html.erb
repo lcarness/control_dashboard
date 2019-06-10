@@ -1,0 +1,44 @@
+<h1>
+  Edit note #<%= @note.id %>
+</h1>
+
+<hr>
+
+<!-- Form note start -->
+<form action="/update_note/<%= @note.id %>" method="post">
+<!-- Form note end -->
+
+  <!-- Label and input for notes start -->
+  <div class="form-group">
+    <label for="notes">
+      Notes
+    </label>
+
+    <!-- Input for notes start -->
+    <input type="text" id="notes" name="notes" class="form-control" value="<%= @note.notes %>">
+    <!-- Input for notes end -->
+  </div>
+  <!-- Label and input for notes end -->
+
+  <!-- Label and input for inputs_id start -->
+  <div class="form-group">
+    <label for="inputs_id">
+      Inputs
+    </label>
+
+    <!-- Input for inputs_id start -->
+    <input type="text" id="inputs_id" name="inputs_id" class="form-control" value="<%= @note.inputs_id %>">
+    <!-- Input for inputs_id end -->
+  </div>
+  <!-- Label and input for inputs_id end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Update note
+  </button>
+</form>
+
+<hr>
+
+<a href="/notes">
+  Go back
+</a>
