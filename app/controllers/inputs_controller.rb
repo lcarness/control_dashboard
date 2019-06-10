@@ -10,7 +10,7 @@ class InputsController < ApplicationController
   end
 
   def index
-    @inputs = Input.all
+    @inputs = current_user.inputs.page(params[:page]).per(10)
 
     render("input_templates/index.html.erb")
   end
