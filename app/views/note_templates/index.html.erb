@@ -64,7 +64,11 @@
 
         <!-- Display note.inputs_id start -->
         <td>
-          <%= note.inputs.operating_income %>
+          <% if note.inputs.present? %>
+            <a href="/inputs/<%= note.inputs.id %>">
+              <%= note.inputs.operating_income %>
+            </a>
+          <% end %>
         </td>
         <!-- Display note.inputs_id end -->
 

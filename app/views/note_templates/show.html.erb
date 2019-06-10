@@ -43,7 +43,11 @@
       </dt>
       <!-- Display inputs_id start -->
       <dd>
-        <%= @note.inputs_id %>
+        <% if @note.inputs.present? %>
+          <a href="/inputs/<%= @note.inputs_id %>">
+            <%= @note.inputs.operating_income %>
+          </a>
+        <% end %>
       </dd>
       <!-- Display inputs_id end -->
 

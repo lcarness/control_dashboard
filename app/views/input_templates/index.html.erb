@@ -384,7 +384,11 @@
 
         <!-- Display input.user_id start -->
         <td>
-          <%= input.user.last_name %>
+          <% if input.user.present? %>
+            <a href="/users/<%= input.user.id %>">
+              <%= input.user.last_name %>
+            </a>
+          <% end %>
         </td>
         <!-- Display input.user_id end -->
 
