@@ -13,17 +13,21 @@
 
       <!-- Edit link input start -->
       <div class="col">
-        <a href="/inputs/<%= @input.id %>/edit" class="btn btn-block btn-outline-secondary">
-          Edit input
-        </a>
+        <% if current_user == @input.user %>
+          <a href="/inputs/<%= @input.id %>/edit" class="btn btn-block btn-sm btn-outline-secondary">
+            Edit input
+          </a>
+        <% end %>
       </div>
       <!-- Edit link input end -->
 
       <!-- Delete link input start -->
       <div class="col">
-        <a href="/delete_input/<%= @input.id %>" class="btn btn-block btn-outline-secondary">
-          Delete input
-        </a>
+        <% if current_user == @input.user %>
+          <a href="/delete_input/<%= @input.id %>" class="btn btn-block btn-sm btn-outline-secondary">
+            Delete input
+          </a>
+        <% end %>
       </div>
       <!-- Delete link input end -->
     </div>
