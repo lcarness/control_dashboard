@@ -1,0 +1,437 @@
+<!-- Validation failure messages -->
+<% if @input.errors.any? %>
+  <% @input.errors.full_messages.each do |message| %>
+    <div class="alert">
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<h1>
+  Edit input #<%= @input.id %>
+</h1>
+
+<hr>
+
+<!-- Form input start -->
+<form action="/update_input/<%= @input.id %>" method="post">
+<!-- Form input end -->
+
+  <!-- Label and input for operating_income start -->
+  <div class="form-group">
+    <label for="operating_income">
+      Operating income
+    </label>
+
+    <!-- Input for operating_income start -->
+    <input type="text" id="operating_income" name="operating_income" class="form-control" value="<%= @input.operating_income %>">
+    <!-- Input for operating_income end -->
+  </div>
+  <!-- Label and input for operating_income end -->
+
+  <!-- Label and input for revenues start -->
+  <div class="form-group">
+    <label for="revenues">
+      Revenues
+    </label>
+
+    <!-- Input for revenues start -->
+    <input type="text" id="revenues" name="revenues" class="form-control" value="<%= @input.revenues %>">
+    <!-- Input for revenues end -->
+  </div>
+  <!-- Label and input for revenues end -->
+
+  <!-- Label and input for invested_capital start -->
+  <div class="form-group">
+    <label for="invested_capital">
+      Invested capital
+    </label>
+
+    <!-- Input for invested_capital start -->
+    <input type="text" id="invested_capital" name="invested_capital" class="form-control" value="<%= @input.invested_capital %>">
+    <!-- Input for invested_capital end -->
+  </div>
+  <!-- Label and input for invested_capital end -->
+
+  <!-- Label and input for total_assets start -->
+  <div class="form-group">
+    <label for="total_assets">
+      Total assets
+    </label>
+
+    <!-- Input for total_assets start -->
+    <input type="text" id="total_assets" name="total_assets" class="form-control" value="<%= @input.total_assets %>">
+    <!-- Input for total_assets end -->
+  </div>
+  <!-- Label and input for total_assets end -->
+
+  <!-- Label and input for paid_in_capital start -->
+  <div class="form-group">
+    <label for="paid_in_capital">
+      Paid in capital
+    </label>
+
+    <!-- Input for paid_in_capital start -->
+    <input type="text" id="paid_in_capital" name="paid_in_capital" class="form-control" value="<%= @input.paid_in_capital %>">
+    <!-- Input for paid_in_capital end -->
+  </div>
+  <!-- Label and input for paid_in_capital end -->
+
+  <!-- Label and input for non_performing_loans_to_customers start -->
+  <div class="form-group">
+    <label for="non_performing_loans_to_customers">
+      Non performing loans to customers
+    </label>
+
+    <!-- Input for non_performing_loans_to_customers start -->
+    <input type="text" id="non_performing_loans_to_customers" name="non_performing_loans_to_customers" class="form-control" value="<%= @input.non_performing_loans_to_customers %>">
+    <!-- Input for non_performing_loans_to_customers end -->
+  </div>
+  <!-- Label and input for non_performing_loans_to_customers end -->
+
+  <!-- Label and input for long_term_debt start -->
+  <div class="form-group">
+    <label for="long_term_debt">
+      Long term debt
+    </label>
+
+    <!-- Input for long_term_debt start -->
+    <input type="text" id="long_term_debt" name="long_term_debt" class="form-control" value="<%= @input.long_term_debt %>">
+    <!-- Input for long_term_debt end -->
+  </div>
+  <!-- Label and input for long_term_debt end -->
+
+  <!-- Label and input for perished_inventory start -->
+  <div class="form-group">
+    <label for="perished_inventory">
+      Perished inventory
+    </label>
+
+    <!-- Input for perished_inventory start -->
+    <input type="text" id="perished_inventory" name="perished_inventory" class="form-control" value="<%= @input.perished_inventory %>">
+    <!-- Input for perished_inventory end -->
+  </div>
+  <!-- Label and input for perished_inventory end -->
+
+  <!-- Label and input for customer_satisfaction start -->
+  <div class="form-group">
+    <label for="customer_satisfaction">
+      Customer satisfaction
+    </label>
+
+    <!-- Input for customer_satisfaction start -->
+    <input type="text" id="customer_satisfaction" name="customer_satisfaction" class="form-control" value="<%= @input.customer_satisfaction %>">
+    <!-- Input for customer_satisfaction end -->
+  </div>
+  <!-- Label and input for customer_satisfaction end -->
+
+  <!-- Label and input for customers_acquired_last_month start -->
+  <div class="form-group">
+    <label for="customers_acquired_last_month">
+      Customers acquired last month
+    </label>
+
+    <!-- Input for customers_acquired_last_month start -->
+    <input type="text" id="customers_acquired_last_month" name="customers_acquired_last_month" class="form-control" value="<%= @input.customers_acquired_last_month %>">
+    <!-- Input for customers_acquired_last_month end -->
+  </div>
+  <!-- Label and input for customers_acquired_last_month end -->
+
+  <!-- Label and input for total_customers start -->
+  <div class="form-group">
+    <label for="total_customers">
+      Total customers
+    </label>
+
+    <!-- Input for total_customers start -->
+    <input type="text" id="total_customers" name="total_customers" class="form-control" value="<%= @input.total_customers %>">
+    <!-- Input for total_customers end -->
+  </div>
+  <!-- Label and input for total_customers end -->
+
+  <!-- Label and input for number_promotion_activities_last_month start -->
+  <div class="form-group">
+    <label for="number_promotion_activities_last_month">
+      Number promotion activities last month
+    </label>
+
+    <!-- Input for number_promotion_activities_last_month start -->
+    <input type="text" id="number_promotion_activities_last_month" name="number_promotion_activities_last_month" class="form-control" value="<%= @input.number_promotion_activities_last_month %>">
+    <!-- Input for number_promotion_activities_last_month end -->
+  </div>
+  <!-- Label and input for number_promotion_activities_last_month end -->
+
+  <!-- Label and input for number_promotion_activities_next_month start -->
+  <div class="form-group">
+    <label for="number_promotion_activities_next_month">
+      Number promotion activities next month
+    </label>
+
+    <!-- Input for number_promotion_activities_next_month start -->
+    <input type="text" id="number_promotion_activities_next_month" name="number_promotion_activities_next_month" class="form-control" value="<%= @input.number_promotion_activities_next_month %>">
+    <!-- Input for number_promotion_activities_next_month end -->
+  </div>
+  <!-- Label and input for number_promotion_activities_next_month end -->
+
+  <!-- Label and input for utilities_expenses start -->
+  <div class="form-group">
+    <label for="utilities_expenses">
+      Utilities expenses
+    </label>
+
+    <!-- Input for utilities_expenses start -->
+    <input type="text" id="utilities_expenses" name="utilities_expenses" class="form-control" value="<%= @input.utilities_expenses %>">
+    <!-- Input for utilities_expenses end -->
+  </div>
+  <!-- Label and input for utilities_expenses end -->
+
+  <!-- Label and input for rent start -->
+  <div class="form-group">
+    <label for="rent">
+      Rent
+    </label>
+
+    <!-- Input for rent start -->
+    <input type="text" id="rent" name="rent" class="form-control" value="<%= @input.rent %>">
+    <!-- Input for rent end -->
+  </div>
+  <!-- Label and input for rent end -->
+
+  <!-- Label and input for interest_expenses start -->
+  <div class="form-group">
+    <label for="interest_expenses">
+      Interest expenses
+    </label>
+
+    <!-- Input for interest_expenses start -->
+    <input type="text" id="interest_expenses" name="interest_expenses" class="form-control" value="<%= @input.interest_expenses %>">
+    <!-- Input for interest_expenses end -->
+  </div>
+  <!-- Label and input for interest_expenses end -->
+
+  <!-- Label and input for taxes start -->
+  <div class="form-group">
+    <label for="taxes">
+      Taxes
+    </label>
+
+    <!-- Input for taxes start -->
+    <input type="text" id="taxes" name="taxes" class="form-control" value="<%= @input.taxes %>">
+    <!-- Input for taxes end -->
+  </div>
+  <!-- Label and input for taxes end -->
+
+  <!-- Label and input for consulting_expenses start -->
+  <div class="form-group">
+    <label for="consulting_expenses">
+      Consulting expenses
+    </label>
+
+    <!-- Input for consulting_expenses start -->
+    <input type="text" id="consulting_expenses" name="consulting_expenses" class="form-control" value="<%= @input.consulting_expenses %>">
+    <!-- Input for consulting_expenses end -->
+  </div>
+  <!-- Label and input for consulting_expenses end -->
+
+  <!-- Label and input for other_indirect_costs start -->
+  <div class="form-group">
+    <label for="other_indirect_costs">
+      Other indirect costs
+    </label>
+
+    <!-- Input for other_indirect_costs start -->
+    <input type="text" id="other_indirect_costs" name="other_indirect_costs" class="form-control" value="<%= @input.other_indirect_costs %>">
+    <!-- Input for other_indirect_costs end -->
+  </div>
+  <!-- Label and input for other_indirect_costs end -->
+
+  <!-- Label and input for number_of_employees start -->
+  <div class="form-group">
+    <label for="number_of_employees">
+      Number of employees
+    </label>
+
+    <!-- Input for number_of_employees start -->
+    <input type="text" id="number_of_employees" name="number_of_employees" class="form-control" value="<%= @input.number_of_employees %>">
+    <!-- Input for number_of_employees end -->
+  </div>
+  <!-- Label and input for number_of_employees end -->
+
+  <!-- Label and input for yearly_working_days start -->
+  <div class="form-group">
+    <label for="yearly_working_days">
+      Yearly working days
+    </label>
+
+    <!-- Input for yearly_working_days start -->
+    <input type="text" id="yearly_working_days" name="yearly_working_days" class="form-control" value="<%= @input.yearly_working_days %>">
+    <!-- Input for yearly_working_days end -->
+  </div>
+  <!-- Label and input for yearly_working_days end -->
+
+  <!-- Label and input for monthly_contribution_margin start -->
+  <div class="form-group">
+    <label for="monthly_contribution_margin">
+      Monthly contribution margin
+    </label>
+
+    <!-- Input for monthly_contribution_margin start -->
+    <input type="text" id="monthly_contribution_margin" name="monthly_contribution_margin" class="form-control" value="<%= @input.monthly_contribution_margin %>">
+    <!-- Input for monthly_contribution_margin end -->
+  </div>
+  <!-- Label and input for monthly_contribution_margin end -->
+
+  <!-- Label and input for last_month_deferred_revenues start -->
+  <div class="form-group">
+    <label for="last_month_deferred_revenues">
+      Last month deferred revenues
+    </label>
+
+    <!-- Input for last_month_deferred_revenues start -->
+    <input type="text" id="last_month_deferred_revenues" name="last_month_deferred_revenues" class="form-control" value="<%= @input.last_month_deferred_revenues %>">
+    <!-- Input for last_month_deferred_revenues end -->
+  </div>
+  <!-- Label and input for last_month_deferred_revenues end -->
+
+  <!-- Label and input for last_month_total_revenues start -->
+  <div class="form-group">
+    <label for="last_month_total_revenues">
+      Last month total revenues
+    </label>
+
+    <!-- Input for last_month_total_revenues start -->
+    <input type="text" id="last_month_total_revenues" name="last_month_total_revenues" class="form-control" value="<%= @input.last_month_total_revenues %>">
+    <!-- Input for last_month_total_revenues end -->
+  </div>
+  <!-- Label and input for last_month_total_revenues end -->
+
+  <!-- Label and input for total_deliveries start -->
+  <div class="form-group">
+    <label for="total_deliveries">
+      Total deliveries
+    </label>
+
+    <!-- Input for total_deliveries start -->
+    <input type="text" id="total_deliveries" name="total_deliveries" class="form-control" value="<%= @input.total_deliveries %>">
+    <!-- Input for total_deliveries end -->
+  </div>
+  <!-- Label and input for total_deliveries end -->
+
+  <!-- Label and input for late_deliveries start -->
+  <div class="form-group">
+    <label for="late_deliveries">
+      Late deliveries
+    </label>
+
+    <!-- Input for late_deliveries start -->
+    <input type="text" id="late_deliveries" name="late_deliveries" class="form-control" value="<%= @input.late_deliveries %>">
+    <!-- Input for late_deliveries end -->
+  </div>
+  <!-- Label and input for late_deliveries end -->
+
+  <!-- Label and input for non_compliant_deliveries start -->
+  <div class="form-group">
+    <label for="non_compliant_deliveries">
+      Non compliant deliveries
+    </label>
+
+    <!-- Input for non_compliant_deliveries start -->
+    <input type="text" id="non_compliant_deliveries" name="non_compliant_deliveries" class="form-control" value="<%= @input.non_compliant_deliveries %>">
+    <!-- Input for non_compliant_deliveries end -->
+  </div>
+  <!-- Label and input for non_compliant_deliveries end -->
+
+  <!-- Label and input for monthly_employee_suggestions_received start -->
+  <div class="form-group">
+    <label for="monthly_employee_suggestions_received">
+      Monthly employee suggestions received
+    </label>
+
+    <!-- Input for monthly_employee_suggestions_received start -->
+    <input type="text" id="monthly_employee_suggestions_received" name="monthly_employee_suggestions_received" class="form-control" value="<%= @input.monthly_employee_suggestions_received %>">
+    <!-- Input for monthly_employee_suggestions_received end -->
+  </div>
+  <!-- Label and input for monthly_employee_suggestions_received end -->
+
+  <!-- Label and input for monthly_revenues_new_products start -->
+  <div class="form-group">
+    <label for="monthly_revenues_new_products">
+      Monthly revenues new products
+    </label>
+
+    <!-- Input for monthly_revenues_new_products start -->
+    <input type="text" id="monthly_revenues_new_products" name="monthly_revenues_new_products" class="form-control" value="<%= @input.monthly_revenues_new_products %>">
+    <!-- Input for monthly_revenues_new_products end -->
+  </div>
+  <!-- Label and input for monthly_revenues_new_products end -->
+
+  <!-- Label and input for monthly_education_hours_manager start -->
+  <div class="form-group">
+    <label for="monthly_education_hours_manager">
+      Monthly education hours manager
+    </label>
+
+    <!-- Input for monthly_education_hours_manager start -->
+    <input type="text" id="monthly_education_hours_manager" name="monthly_education_hours_manager" class="form-control" value="<%= @input.monthly_education_hours_manager %>">
+    <!-- Input for monthly_education_hours_manager end -->
+  </div>
+  <!-- Label and input for monthly_education_hours_manager end -->
+
+  <!-- Label and input for monthly_education_hours_all_employees start -->
+  <div class="form-group">
+    <label for="monthly_education_hours_all_employees">
+      Monthly education hours all employees
+    </label>
+
+    <!-- Input for monthly_education_hours_all_employees start -->
+    <input type="text" id="monthly_education_hours_all_employees" name="monthly_education_hours_all_employees" class="form-control" value="<%= @input.monthly_education_hours_all_employees %>">
+    <!-- Input for monthly_education_hours_all_employees end -->
+  </div>
+  <!-- Label and input for monthly_education_hours_all_employees end -->
+
+  <!-- Label and input for reference_period start -->
+  <div class="form-group">
+    <label for="reference_period">
+      Reference period
+    </label>
+
+    <!-- Input for reference_period start -->
+    <input type="text" id="reference_period" name="reference_period" class="form-control" value="<%= @input.reference_period %>">
+    <!-- Input for reference_period end -->
+  </div>
+  <!-- Label and input for reference_period end -->
+
+  <!-- Label and input for date_of_entry start -->
+  <div class="form-group">
+    <label for="date_of_entry">
+      Date of entry
+    </label>
+
+    <!-- Input for date_of_entry start -->
+    <input type="text" id="date_of_entry" name="date_of_entry" class="form-control" value="<%= @input.date_of_entry %>">
+    <!-- Input for date_of_entry end -->
+  </div>
+  <!-- Label and input for date_of_entry end -->
+
+  <!-- Label and input for user_id start -->
+  <div class="form-group">
+    <label for="user_id">
+      User
+    </label>
+
+    <!-- Input for user_id start -->
+    <input type="text" id="user_id" name="user_id" class="form-control" value="<%= @input.user_id %>">
+    <!-- Input for user_id end -->
+  </div>
+  <!-- Label and input for user_id end -->
+
+  <button class="btn btn-block btn-outline-secondary">
+    Update input
+  </button>
+</form>
+
+<hr>
+
+<a href="/inputs">
+  Go back
+</a>
